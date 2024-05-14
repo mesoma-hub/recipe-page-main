@@ -1,0 +1,212 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;  
+    min-height: 100vh;
+    
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card {
+    background-color: var(--white);
+}
+
+.title {
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: var(--wengeBrown);
+    line-height: 1.5;
+}
+
+.preparation {
+    padding: 1.2rem;
+    background-color: var(--RoseWhite);
+    margin-top: 2rem;
+    border-radius: 50%rem;
+    color: var(--wengeBrown);
+    border-radius: 0.75rem;
+}
+
+.preparation-heading {
+    color: var(--darkRaspberry);
+}
+
+.preparation-list {
+    padding: 1.5rem;
+    width: 100%;
+    list-style-position: outside;
+    margin-bottom: -1rem;
+    color: var(--nutmeg);
+}
+
+.preparation-list li {
+    padding: 0.5rem;
+    text-align: left;
+}
+.preparation-list li p {
+    color: var(--wengeBrown);
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+.ingredients {
+    margin-top: 2rem;
+    color: var(--nutmeg);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.ingredients-list {
+    margin-top: .5rem;
+    padding: 1.5rem;
+    color: var(--nutmeg);
+}
+
+.ingredients-list li {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.ingredients-list li p {
+    color: var(--wengeBrown);
+}
+hr.line {
+    border-top: 1px solid var(--lightGrey);
+}
+
+.card .recipe {
+    padding: 2rem;
+}
+
+.instructions {
+    margin-top: 2rem;
+    color: var(--nutmeg);
+    
+}
+
+.instructions-list {
+    color: var(--nutmeg);
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.instructions-list li {
+    /* color: var(--wengeBrown); */
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.instructions-list li p {
+    color: var(--wengeBrown);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.nutrition {
+    color: var(--nutmeg);
+    margin-top: 2rem;
+}
+
+.information {
+    color: var(--wengeBrown);
+    margin-top: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.table {
+    color: var(--wengeBrown);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table .bold {
+    color: var(--nutmeg);
+}
+
+td {
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 1rem 1.75rem;
+}
+
+.space {
+    margin-left: 1rem;
+}
+.last {
+    border-bottom-style: hidden;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: var(--eggshell);    
+        display: grid;
+        place-content: center start;
+        padding: 4rem;
+    }
+    .card {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    img {
+        border-radius: .5rem;
+    }
+    .card .recipe {
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .instructions-list li p {
+        font-size: .95rem;
+    }
+
+}
